@@ -1,0 +1,11 @@
+# Netlify build settings.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Single-page-app fallback: any URL (e.g. /chat on refresh) serves index.html,
+# then React Router renders the right page on the client.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
