@@ -1,0 +1,588 @@
+/* General Style */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172554;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Page Layout */
+
+.about-page,
+.services-page,
+.tracker-page,
+.chat-page,
+.contact-page {
+  padding-top: 85px;
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172554;
+}
+
+/* Page Headers */
+
+.about-header,
+.services-header,
+.tracker-header,
+.chat-header,
+.contact-header {
+  background: #e8efff;
+  text-align: center;
+  padding: 55px 20px;
+  margin-bottom: 40px;
+}
+
+.about-header h1,
+.services-header h1,
+.tracker-header h1,
+.chat-header h1,
+.contact-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.about-header p,
+.services-header p,
+.tracker-header p,
+.chat-header p,
+.contact-header p {
+  font-size: 18px;
+  color: #64748b;
+}
+
+/* About Page */
+
+.about-content {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.about-content img {
+  width: 45%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px #00000015;
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-info h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-info p {
+  color: #64748b;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+.about-btn,
+.service-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.about-btn:hover,
+.service-btn:hover {
+  background: #1d4ed8;
+}
+
+.about-values,
+.about-technologies {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.about-values h2,
+.about-technologies h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-cards {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.about-card {
+  background: white;
+  border-radius: 15px;
+  padding: 35px 25px;
+  box-shadow: 0 5px 20px #00000012;
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card span {
+  font-size: 45px;
+}
+
+.about-card h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.about-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.technology-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.technology-list span {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Services Page */
+
+.services-cards {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #00000012;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+}
+
+.service-icon {
+  font-size: 48px;
+}
+
+.service-card h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.service-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.service-card li {
+  color: #334155;
+  margin: 12px 0;
+}
+
+.services-banner {
+  background: #dbeafe;
+  text-align: center;
+  padding: 45px 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+  border-radius: 15px;
+}
+
+.services-banner h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Health Tracker */
+
+.tracker-header input {
+  margin-top: 20px;
+  background: white;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.tracker-stats {
+  max-width: 1150px;
+  margin: 30px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tracker-card {
+  background: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.tracker-card span {
+  font-size: 38px;
+}
+
+.tracker-card h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.tracker-card p {
+  color: #64748b;
+}
+
+.tracker-content {
+  max-width: 1150px;
+  padding: 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.tracker-form,
+.tracker-wellness,
+.tracker-history {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.tracker-form h2,
+.tracker-wellness h2,
+.tracker-history h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.tracker-page label,
+.contact-page label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 8px;
+}
+
+.tracker-content input,
+.tracker-content select,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #172554;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.tracker-form button,
+.contact-form button {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.tracker-form button:hover,
+.contact-form button:hover {
+  background: #1d4ed8;
+}
+
+.tracker-history {
+  max-width: 1110px;
+  margin: 30px auto;
+}
+
+.tracker-record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tracker-record button {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+/* AI Chat */
+
+.chat-container {
+  max-width: 1150px;
+  margin: 40px auto;
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px #00000015;
+}
+
+.chat-sidebar {
+  width: 270px;
+  background: #172554;
+  color: white;
+  padding: 25px;
+}
+
+.chat-sidebar h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.chat-sidebar h3 {
+  margin: 25px 0 12px;
+  font-size: 15px;
+}
+
+.chat-sidebar button,
+.chat-sidebar select {
+  width: 100%;
+  background: #263963;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.chat-sidebar button:hover {
+  background: #2563eb;
+}
+
+.chat-main {
+  flex: 1;
+  min-width: 0;
+  background: white;
+}
+
+.chat-top {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.chat-top h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.chat-top span {
+  color: #16a34a;
+  font-size: 13px;
+}
+
+.chat-messages {
+  height: 420px;
+  overflow-y: auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.chat-message {
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 80%;
+  overflow-wrap: anywhere;
+}
+
+.chat-message p {
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.chat-message.bot {
+  background: #f1f5f9;
+  color: #172554;
+  align-self: flex-start;
+}
+
+.chat-message.user {
+  background: #2563eb;
+  color: white;
+  align-self: flex-end;
+}
+
+.chat-input {
+  padding: 20px;
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.chat-input input {
+  flex: 1;
+  min-width: 0;
+  background: #f8fafc;
+  color: #172554;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.chat-input button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+
+/* Contact Page */
+
+.contact-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px #00000010;
+}
+
+.contact-card span {
+  font-size: 30px;
+}
+
+.contact-card h3 {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.success-message {
+  background: #dcfce7;
+  color: #166534;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-content img {
+    width: 100%;
+  }
+
+  .about-cards,
+  .services-cards,
+  .tracker-content,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tracker-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chat-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .chat-sidebar {
+    width: 100%;
+  }
+
+  .tracker-history {
+    margin: 20px;
+  }
+
+}
