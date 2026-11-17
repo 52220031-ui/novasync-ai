@@ -3,8 +3,8 @@
 > CSCI426 Advanced Web Programming · Project Phase 1
 > Theme: **HealthTrack – Fitness and Wellness System**, extended with an AI chat assistant and a study task list.
 
-**Live demo:** `https://YOUR-USERNAME.github.io/novasync-ai/` *(replace with your deployed link)*
-**Repository:** `https://github.com/YOUR-USERNAME/novasync-ai` *(replace)*
+**Live demo:** `https://novasync-ai.vercel.app/` *(replace with your deployed link)*
+**Repository:** `https://github.com/52220031-ui/novasync-ai` *(replace)*
 
 ## Project description
 
