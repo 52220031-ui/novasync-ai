@@ -1,0 +1,162 @@
+.home-page {
+  background: #f5f7fb;
+  color: #172554;
+  padding-top: 90px;
+  font-family: Arial, sans-serif;
+}
+
+.home-hero {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 30px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-label {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero-content p {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.home-hero img {
+  width: 45%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px #00000020;
+}
+
+.home-btn,
+.outline-btn {
+  display: inline-block;
+  padding: 13px 22px;
+  margin: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.home-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.home-btn:hover {
+  background: #1d4ed8;
+}
+
+.outline-btn {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.outline-btn:hover {
+  background: #dbeafe;
+}
+
+.home-features {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.home-features h2,
+.home-banner h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.home-features p {
+  color: #64748b;
+}
+
+.feature-cards {
+  max-width: 1100px;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000012;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px #00000020;
+}
+
+.feature-card span {
+  font-size: 45px;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.feature-card a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.home-banner {
+  background: #172554;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home-banner p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-hero img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+}
