@@ -1,3 +1,4 @@
+import "./style.css";
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Compass } from 'lucide-react';
